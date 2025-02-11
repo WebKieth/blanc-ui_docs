@@ -1,0 +1,6 @@
+@font-face {
+  font-family: "Ticketing";
+  src: local("Ticketing"),
+    url("./ticketing.ttf") format("truerype");
+  font-weight: normal;
+}
