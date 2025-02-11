@@ -17,7 +17,7 @@ jobs:
           # fetch all commits to get last updated time or other git log info
           fetch-depth: 0
 
-      - name: Setup npm
+      - name: Setup pnpm
         uses: pnpm/action-setup@v4
 
       - name: Setup Node.js
@@ -26,14 +26,14 @@ jobs:
           # choose node.js version to use
           node-version: 22
           # cache deps for pnpm
-          cache: npm
+          cache: pnpm
 
       - name: Install deps
-        run: npm install
+        run: pnpm install --frozen-lockfile
 
       # run build script
       - name: Build VuePress site
-        run: npm run build
+        run: pnpm docs:build
 
       # please check out the docs of the workflow for more details
       # @see https://github.com/crazy-max/ghaction-github-pages
