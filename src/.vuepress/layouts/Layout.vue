@@ -24,7 +24,7 @@ import ParentLayout from '@vuepress/theme-default/layouts/Layout.vue'
   }
 }
 .vp-site-name {
-  font-family: 'Ticketing';
+  font-family: 'Handjet', serif;
 }
 .vp-navbar span a.route-link {
   display: flex;

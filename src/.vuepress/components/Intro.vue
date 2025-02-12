@@ -76,7 +76,7 @@ const features = [
   font-size: 48px;
 }
 #typed {
-  font-family: 'Ticketing';
+  font-family: 'Handjet', serif;
   padding: 0;
   margin: 0;
   font-size: 72px;
