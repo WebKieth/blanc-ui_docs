@@ -9,7 +9,7 @@
     <div class="features">
       <div class="features__item" v-for="feature in features">
         <div class="feature" :key="feature.title">
-          <Icon :name="feature.icon" width="48" height="48" />
+          <Icon :name="feature.icon" :width="48" :height="48" />
           <h4 class="feature__title">{{ feature.title }}</h4>
           <p>{{ feature.summary }}</p>
         </div>

@@ -122,10 +122,10 @@ export default defineUserConfig({
   description: 'Blanc UI Документация',
   base: '/blanc-ui_docs/',
   head: [
-    ['link', {rel: 'shortcut icon', type: 'image/x-icon', href: '/favicon.ico'}],
+    ['link', {rel: 'shortcut icon', type: 'image/x-icon', href: '/blanc-ui_docs/favicon.ico'}],
     ['link', {rel: 'preconnect', href: 'https://fonts.googleapis.com'}],
     ['link', {rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: true}],
-    ['link', {rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Handjet:wght@100..900&display=swap'}]
+    ['link', {rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Handjet:wght@100..900&display=swap'}],
     ['script', {src: 'https://unpkg.com/@tailwindcss/browser@4'}]
   ]
 })
