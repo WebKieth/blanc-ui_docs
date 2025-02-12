@@ -25,6 +25,8 @@ import ParentLayout from '@vuepress/theme-default/layouts/Layout.vue'
 }
 .vp-site-name {
   font-family: 'Handjet', serif;
+  font-weight: 200;
+  font-size: 32px;
 }
 .vp-navbar span a.route-link {
   display: flex;

@@ -105,11 +105,14 @@ const THEME_CONFIG = {
   },
   navbar: [
     {
-      text: 'React модули',
-      link: '/react/'
+      text: 'Концепция',
+      link: '/concepts/'
     }, {
       text: 'Vue модули',
       link: '/vue/'
+    }, {
+      text: 'React модули',
+      link: '/react/'
     }
   ]
 }

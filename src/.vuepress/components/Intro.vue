@@ -1,10 +1,10 @@
 <template>
   <div class="intro-container">
     <div class="typed-container py-20"><h1 id="typed"></h1></div>
-    <h3 class="subtitle">Модульный набор плагинов и компонентов для удобной разработки интерфейсов на Vue и React</h3>
+    <h3 class="subtitle">Модульный набор плагинов и компонентов<br /> для удобной разработки интерфейсов на Vue и React</h3>
     <div class="pb-20 text-lg">
-      <p>Устали от переопределения стилей и топорности высокоуровневых UI библиотек?</p>
-      <p>Тогда вы по адресу!</p>
+      <p class="pb-4">Устали от переопределения стилей базовых компонентов<br /> и топорности высокоуровневых UI библиотек?</p>
+      <p><code>npm install blanc-ui@latest</code></p>
     </div>
     <div class="features">
       <div class="features__item" v-for="feature in features">
@@ -30,6 +30,7 @@ onMounted(() => {
   new Typed('#typed', {
     strings: ['Ant Des', '', 'Blya', 'Blanc UI'],
     typeSpeed: 200,
+    cursorChar: '_'
   })
 })
 const features = [
@@ -70,16 +71,17 @@ const features = [
 .typed-container {
   display: flex;
   align-items: center;
-  min-height: 90px;
+  min-height: 120px;
 }
 .typed-cursor {
   font-size: 48px;
 }
 #typed {
   font-family: 'Handjet', serif;
+  font-weight: 300;
   padding: 0;
   margin: 0;
-  font-size: 72px;
+  font-size: 76px;
 }
 .features {
   display: flex;
