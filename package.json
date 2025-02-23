@@ -16,6 +16,7 @@
   "devDependencies": {
     "@tailwindcss/vite": "^4.0.0",
     "@vuepress/bundler-vite": "^2.0.0-rc.19",
+    "@vuepress/plugin-register-components": "^2.0.0-rc.66",
     "@vuepress/theme-default": "^2.0.0-rc.74",
     "sass-embedded": "^1.83.4",
     "tailwindcss": "^4.0.0",

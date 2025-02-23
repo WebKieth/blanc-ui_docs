@@ -1,0 +1,1 @@
+export type StructureInfo = Record<string, string | Record<string, string>>

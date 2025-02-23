@@ -2,6 +2,10 @@ import { viteBundler } from '@vuepress/bundler-vite'
 import { defaultTheme } from '@vuepress/theme-default'
 import { defineUserConfig } from 'vuepress'
 import tailwindcss from '@tailwindcss/vite';
+import { getDirname, path } from 'vuepress/utils'
+import { registerComponentsPlugin } from '@vuepress/plugin-register-components'
+
+const __dirname = import.meta.dirname || getDirname(import.meta.url)
 
 const BUNDLER_CONFIG = {
   plugins: [
@@ -130,5 +134,10 @@ export default defineUserConfig({
     ['link', {rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: true}],
     ['link', {rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Handjet:wght@100..900&display=swap'}],
     ['script', {src: 'https://unpkg.com/@tailwindcss/browser@4'}]
+  ],
+  plugins: [
+    registerComponentsPlugin({
+      componentsDir: path.resolve(__dirname, './components'),
+    })
   ]
 })

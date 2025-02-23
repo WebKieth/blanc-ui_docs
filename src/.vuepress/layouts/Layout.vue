@@ -6,6 +6,9 @@ import ParentLayout from '@vuepress/theme-default/layouts/Layout.vue'
   <ParentLayout class="flex flex-col h-screen" />
 </template>
 <style lang="scss">
+body {
+  position: relative;
+}
 .vp-page {
   flex-grow: 1;
   display: flex;
