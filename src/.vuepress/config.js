@@ -4,6 +4,7 @@ import { defineUserConfig } from 'vuepress'
 import tailwindcss from '@tailwindcss/vite';
 import { getDirname, path } from 'vuepress/utils'
 import { registerComponentsPlugin } from '@vuepress/plugin-register-components'
+import yandexMetrikaPlugin from 'vuepress-plugin-yandex-metrika';
 
 const __dirname = import.meta.dirname || getDirname(import.meta.url)
 
@@ -138,6 +139,15 @@ export default defineUserConfig({
   plugins: [
     registerComponentsPlugin({
       componentsDir: path.resolve(__dirname, './components'),
+    }),
+    yandexMetrikaPlugin({
+      id: 100093086,
+      config: {
+        clickmap: true,
+        trackLinks: true,
+        accurateTrackBounce: true,
+        webvisor: true
+      }
     })
   ]
 })
