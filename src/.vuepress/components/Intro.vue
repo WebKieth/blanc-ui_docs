@@ -18,6 +18,7 @@
     <div class="epilogue">
       <span>Документация в активной разработке и в ближайшее время будет доступна только на моём родном русском языке!</span>
       <span>Есть вопросы? <a href="https://t.me/null_is_also_value" target="_blank" rel="noopener noreferrer">Пишите мне в telegram</a></span>
+      <span>Release Notes так же ведутся в отдельном <a href="https://t.me/blanc_ui_release_notes" target="_blank" rel="noopener noreferrer">Telegram канале</a></span>
     </div>
 
   </div>
